@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root,
+:root[data-theme='light'] {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #263027;
+  background: #fafbf7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-display: 'Manrope', 'DM Sans', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, monospace;
+  --ink: #263027;
+  --muted: #8a9186;
+  --muted-light: #a9afa5;
+  --green: #52734c;
+  --green-dark: #3d5e39;
+  --green-soft: #c6d4b8;
+  --green-pale: #edf1e7;
+  --orange: #d68258;
+  --line: #e7e9e1;
+  --line-light: #f0f1eb;
+  --surface: #fff;
+  --page: #fafbf7;
+
+  color-scheme: light;
+  background: var(--page);
+}
+
+:root[data-theme='dark'] {
+  --ink: #e8ebdf;
+  --muted: #a1a99c;
+  --muted-light: #737c70;
+  --green: #9bb88a;
+  --green-dark: #b6cea6;
+  --green-soft: #53664b;
+  --green-pale: #30392d;
+  --orange: #e3a17b;
+  --line: #343c32;
+  --line-light: #2c332a;
+  --surface: #20261f;
+  --page: #181d18;
+
+  color-scheme: dark;
+  background: var(--page);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--green-soft);
+  color: var(--ink);
+}
